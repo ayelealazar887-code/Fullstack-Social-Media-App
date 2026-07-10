@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./components/Home";
+import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
+import { CreatePostPage } from "./pages/createPostPage";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/create" element={<CreatePostPage />} />
         </Routes>
       </div>
     </div>
